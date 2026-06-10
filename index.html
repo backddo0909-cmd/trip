@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>방구석 세계 여행 가이드</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="stampOverlay" class="stamp-overlay">
+    <div class="stamp-graphic">PASSPORT APPROVED</div>
+  </div>
+
+  <div class="passport-card">
+    <div class="country-header">
+      <span id="countryFlag">✈️</span> 
+      <span id="countryName">대한민국</span> · 
+      <span id="cityName">서울</span>
+    </div>
+
+    <div class="travel-media">
+      <div class="image-box">
+        <img id="cityImage" alt="여행지 사진" style="display:none;">
+        <p id="loading">다음 목적지 비행기 표 끊는 중...</p>
+      </div>
+      <div class="city-badge" id="cityOneLiner">한줄평이 여기에 표시됩니다.</div>
+    </div>
+
+    <div class="route-box">
+      <h3>🗺️ 추천 3박 4일 시그니처 코스</h3>
+      <ul id="routeList">
+        <li>코스를 불러오는 중입니다.</li>
+      </ul>
+    </div>
+
+    <div class="expense-section">
+      <h3>💰 실전 예상 예산 리포트 <small>(1인 기준)</small></h3>
+      
+      <div class="stat-bar-group">
+        <div class="bar-row">
+          <span>왕복 항공권</span>
+          <div class="progress-bg"><div id="barFlight" class="progress-fill flight"></div></div>
+          <span id="txtFlight">0원</span>
+        </div>
+        <div class="bar-row">
+          <span>가성비 숙소</span>
+          <div class="progress-bg"><div id="barHotel" class="progress-fill hotel"></div></div>
+          <span id="txtHotel">0원</span>
+        </div>
+        <div class="bar-row">
+          <span>식비 및 패스</span>
+          <div class="progress-bg"><div id="barStyle" class="progress-fill style"></div></div>
+          <span id="txtStyle">0원</span>
+        </div>
+      </div>
+
+      <div class="package-price-box">
+        ✈️ 주요 여행사 에어텔/패키지 최저가: <strong id="txtPackage">0원~</strong>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button id="nextTripBtn" class="primary-btn">🎫 다음 나라로 떠나기</button>
+      <button id="wishlistBtn" class="wish-btn">❤️ 여행지 찜</button>
+    </div>
+
+    <div class="auto-slide-control">
+      <label class="switch">
+        <input type="checkbox" id="autoSlideCheck">
+        <span class="slider round"></span>
+      </label>
+      <span class="slide-text">8초마다 자동 세계 일주</span>
+    </div>
+
+    <div class="wishlist-section">
+      <h3>📁 나의 여행 버킷리스트 <small>(클릭 시 계획 취소)</small></h3>
+      <div id="wishlistGrid" class="wishlist-grid"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
